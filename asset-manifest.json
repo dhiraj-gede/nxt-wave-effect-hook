@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/nxt-wave-effect-hook/static/css/main.e6c13ad2.css",
-    "main.js": "/nxt-wave-effect-hook/static/js/main.36c80e40.js",
+    "main.css": "/nxt-wave-effect-hook/static/css/main.2efa84eb.css",
+    "main.js": "/nxt-wave-effect-hook/static/js/main.d335cb58.js",
     "index.html": "/nxt-wave-effect-hook/index.html",
-    "main.e6c13ad2.css.map": "/nxt-wave-effect-hook/static/css/main.e6c13ad2.css.map",
-    "main.36c80e40.js.map": "/nxt-wave-effect-hook/static/js/main.36c80e40.js.map"
+    "main.2efa84eb.css.map": "/nxt-wave-effect-hook/static/css/main.2efa84eb.css.map",
+    "main.d335cb58.js.map": "/nxt-wave-effect-hook/static/js/main.d335cb58.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.36c80e40.js"
+    "static/css/main.2efa84eb.css",
+    "static/js/main.d335cb58.js"
   ]
 }
