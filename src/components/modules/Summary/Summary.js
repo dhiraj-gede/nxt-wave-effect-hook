@@ -46,7 +46,7 @@ function Summary() {
       </Typography>
       <Typography variant="body1">
         Source:{" "}
-        <Link href="https://react.dev/reference/react/hooks#effect-hooks" target="_blank">
+        <Link to={"https://react.dev/reference/react/hooks#effect-hooks"} target="_blank">
         https://react.dev/reference/react/hooks#effect-hooks
         </Link>
       </Typography>

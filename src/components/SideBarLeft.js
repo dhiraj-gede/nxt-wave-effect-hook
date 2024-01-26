@@ -26,26 +26,22 @@ export default function ResponsiveDrawer({
   handleDrawerToggle,
 }) {
   const drawer = (
-    <Box >
+    <Box>
       <Toolbar />
       <List>
         {["Topics", "MCQ's", "Assignments", "Summary"].map((text, index) => (
           <React.Fragment key={text}>
-              <ListItem  disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <Link to={`/${text.toLowerCase().replace(/'/g, "")}`}>
-                <ListItemText primary={text} />
-              </Link>
-            </ListItemButton>
-          </ListItem>
-          <Divider />
+            <Link to={`/nxt-wave-effect-hook/${text.toLowerCase().replace(/'/g, "")}`}>
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <ListItemText primary={text} />
+                </ListItemButton>
+              </ListItem>
+              <Divider />
+            </Link>
           </React.Fragment>
         ))}
       </List>
-     
     </Box>
   );
 

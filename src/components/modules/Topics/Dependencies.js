@@ -83,7 +83,7 @@ function Dependencies() {
         render.
       </Typography>
       {!completedModules.includes("Dependencies") && (
-        <Link to="/topics/things-to-avoid">
+        <Link to="/nxt-wave-effect-hook/topics/things-to-avoid">
           <Button
           sx={{marginTop: '4rem'}}
             variant="contained"
@@ -95,7 +95,7 @@ function Dependencies() {
         </Link>
       )}
       {completedModules.length===7 && 
-            <Link to="/mcqs" >
+            <Link to="/nxt-wave-effect-hook/mcqs" >
             <Button variant="contained" sx={{marginTop: '4rem'}} onClick={handleCompletion} color="primary">
               MCQ's
             </Button>

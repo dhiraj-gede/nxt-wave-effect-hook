@@ -2,7 +2,7 @@
   "name": "nxt-wave-effect-hook",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://dhiraj-gede.github.io/nxt-wave2", 
+  "homepage": "http://dhiraj-gede.github.io/nxt-wave-effect-hook/",
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",

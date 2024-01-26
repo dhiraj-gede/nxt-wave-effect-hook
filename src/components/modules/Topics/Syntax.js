@@ -63,7 +63,7 @@ function MyComponent() {
         function will only run once after the initial render.
       </Typography>
       {!completedModules.includes("Syntax") && (
-        <Link to="/topics/when-to-use-effect-hook">
+        <Link to="/nxt-wave-effect-hook/topics/when-to-use-effect-hook">
           <Button
             variant="contained"
             onClick={handleCompletion}
@@ -75,7 +75,7 @@ function MyComponent() {
         </Link>
       )}
       {completedModules.length===7 && 
-            <Link to="/mcqs" >
+            <Link to="/nxt-wave-effect-hook/mcqs" >
             <Button variant="contained" sx={{marginTop: '4rem'}} onClick={handleCompletion} color="primary">
               MCQ's
             </Button>

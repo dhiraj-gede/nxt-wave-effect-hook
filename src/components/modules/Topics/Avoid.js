@@ -26,7 +26,7 @@ function Avoid() {
       </Typography>
       <Box ml={2}>
         <Typography variant="body1" gutterBottom>
-          1. <strong>Changing the order of hooks</strong>: The order of hooks invocation should not change between renderings. This is why hooks should not be called inside loops, conditions, or nested functions[^4^][5].
+          1. <strong>Changing the order of hooks</strong>: The order of hooks invocation should not change between renderings. This is why hooks should not be called inside loops, conditions, or nested functions.
         </Typography>
         <Typography variant="body1" gutterBottom>
           2. <strong>Using stale state</strong>: Always ensure that you're using the latest state inside your `useEffect` hook.
@@ -42,14 +42,14 @@ function Avoid() {
         </Typography>
       </Box>
       {!completedModules.includes("Things to avoid") && 
-      <Link to="/topics/cleanup-function"  >
+      <Link to="/nxt-wave-effect-hook/topics/cleanup-function"  >
       <Button variant="contained" sx={{marginTop: '4rem'}} onClick={handleCompletion} color="primary">
         Mark As Complete
       </Button>
       </Link>
 }
 {completedModules.length===7 && 
-      <Link to="/mcqs" >
+      <Link to="/nxt-wave-effect-hook/mcqs" >
       <Button variant="contained" sx={{marginTop: '4rem'}} onClick={handleCompletion} color="primary">
         MCQ's
       </Button>

@@ -46,7 +46,7 @@ function SideEffectsAndSync() {
         code clean and easy to understand.
       </Typography>
       {!completedModules.includes("Side effects and synchronization?") && (
-        <Link to="/topics/syntax">
+        <Link to="/nxt-wave-effect-hook/topics/syntax">
           <Button
             variant="contained"
             onClick={handleCompletion}
@@ -58,7 +58,7 @@ function SideEffectsAndSync() {
         </Link>
       )}
       {completedModules.length===7 && 
-            <Link to="/mcqs" >
+            <Link to="/nxt-wave-effect-hook/mcqs" >
             <Button variant="contained" sx={{marginTop: '4rem'}} onClick={handleCompletion} color="primary">
               MCQ's
             </Button>

@@ -46,7 +46,7 @@ export default function Navigation() {
           {completedModules.includes(module) ? (
             <Link
                 onClick={() => dispatch(initializeModuleCompletion(module))}
-                to={`/topics/${module.toLowerCase().replace(/ /g, '-')}`}
+                to={`/nxt-wave-effect-hook/topics/${module.toLowerCase().replace(/ /g, '-')}`}
               key={module}
             >
               <BasicCard
@@ -69,7 +69,7 @@ export default function Navigation() {
               key={index}
                 onClick={() => dispatch(initializeModuleCompletion(module))}
                 className="module-link"
-              to={`/topics/${module.toLowerCase().replace(/ /g, '-')}`}
+              to={`/nxt-wave-effect-hook/topics/${module.toLowerCase().replace(/ /g, '-')}`}
             >
               <BasicCard
                 title={module}
@@ -83,7 +83,7 @@ export default function Navigation() {
             <>
               <Link
                 onClick={() => dispatch(initializeModuleCompletion(module))}
-                to={`/topics/${module.toLowerCase().replace(/ /g, '-')}`}
+                to={`/nxt-wave-effect-hook/topics/${module.toLowerCase().replace(/ /g, '-')}`}
                 key={module}
               >
                 <BasicCard

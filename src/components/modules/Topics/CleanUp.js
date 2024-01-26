@@ -21,13 +21,13 @@ function CleanUp() {
         Cleanup Function in useEffect Hook in React
       </Typography>
       <Typography variant="body1" gutterBottom>
-        The `useEffect` hook in React allows for a cleanup function[^1^][1][^2^][2]. This function is declared as a return statement within the `useEffect` function[^3^][4]. It runs immediately before the effect is re-run or when the component is unmounted[^3^][4].
+        The `useEffect` hook in React allows for a cleanup function. This function is declared as a return statement within the `useEffect` function. It runs immediately before the effect is re-run or when the component is unmounted.
       </Typography>
       <Typography variant="body1" gutterBottom>
-        The cleanup function is very useful because it allows us to remove unnecessary behavior or prevent memory leaking issues[^2^][2]. It can be used to unsubscribe to a websocket component, or dismount before an async operation finishes[^2^][2].
+        The cleanup function is very useful because it allows us to remove unnecessary behavior or prevent memory leaking issues. It can be used to unsubscribe to a websocket component, or dismount before an async operation finishes.
       </Typography>
       <Typography variant="body1" gutterBottom>
-        Here is an example of how to use the cleanup function in `useEffect` hook[^2^][2]:
+        Here is an example of how to use the cleanup function in `useEffect` hook:
       </Typography>
       <Box component="pre" fontFamily="Monospace" bgcolor="#f5f5f5" p={1}>
         {`useEffect(() => {
@@ -39,7 +39,7 @@ function CleanUp() {
 }, [/* dependencies */]);`}
       </Box>
       <Typography variant="body1" gutterBottom>
-        In this example, the `useEffect` hook takes a function that contains the code for the side effect[^1^][1]. If a function is returned from this function, it will be used as the cleanup function[^1^][1].
+        In this example, the `useEffect` hook takes a function that contains the code for the side effect. If a function is returned from this function, it will be used as the cleanup function.
       </Typography>
       {!completedModules.includes("Cleanup function") && 
       // <Link to="/mcqs" >
@@ -49,7 +49,7 @@ function CleanUp() {
       // </Link>
       }
       {completedModules.length===7 && 
-      <Link to="/mcqs" >
+      <Link to="/nxt-wave-effect-hook/mcqs" >
       <Button variant="contained" sx={{marginTop: '4rem'}} onClick={handleCompletion} color="primary">
         MCQ's
       </Button>

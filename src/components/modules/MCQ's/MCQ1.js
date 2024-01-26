@@ -155,15 +155,19 @@ function MCQ1() {
         </Grid>
       ) : (
         <div>
-          <h2>Your score is: {score}</h2>
+          <h2>Your score is: {score}/{questions.length*2}</h2>
           {incorrectAnswers.length > 0 && (
+            // list of incorrect answers
             <div>
               <h3>Incorrect Answers:</h3>
-              {incorrectAnswers.map((item, index) => (
-                <p key={index}>
-                  {item.question} - Your answer: {item.selectedOption} - Correct
-                  answer: {item.correctOption}
-                </p>
+              {incorrectAnswers.map((answer, index) => (
+                <div key={index}>
+                  <p> <strong>{index+1}. Question:</strong> {answer.question}</p>
+                  <p><strong>Your Answer: </strong> {answer.selectedOption}</p>
+                  <p><strong>Correct Answer: </strong> {answer.correctOption}</p>
+                  <Divider/>
+                </div>
+
               ))}
             </div>
           )}

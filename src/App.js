@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 
 import store from './redux/store'; // Assuming your store is defined in `/redux/store.js`
 import Home from './components/Home';
+import './App.css';
 
 function App() {
   const dispatch = useDispatch();

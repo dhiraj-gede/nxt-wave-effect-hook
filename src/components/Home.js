@@ -54,30 +54,32 @@ function Home({ window }) {
       >
        
         <Routes>
-          <Route path="/topics" element={<WhatIsEffectHook />} />
+          <Route path="/" element={<WhatIsEffectHook />} />
+          <Route path="/nxt-wave-effect-hook" element={<WhatIsEffectHook />} />
+          <Route path="/nxt-wave-effect-hook/topics" element={<WhatIsEffectHook />} />
           <Route
-            path="/summary"
+            path="/nxt-wave-effect-hook/summary"
             element={<Summary />}
           />
-          <Route path="/syntax" element={<Syntax />} />
+          <Route path="/nxt-wave-effect-hook/syntax" element={<Syntax />} />
           <Route
-            path="/mcqs"
+            path="/nxt-wave-effect-hook/mcqs"
             element={<MCQ1 />}
           />
-          <Route path="/assignments" element={<Assignments />} />
-          <Route path="/topics/what-is-effect-hook" element={<WhatIsEffectHook />} />
+          <Route path="/nxt-wave-effect-hook/assignments" element={<Assignments />} />
+          <Route path="/nxt-wave-effect-hook/topics/what-is-effect-hook" element={<WhatIsEffectHook />} />
           <Route
-            path="/topics/side-effects-and-synchronization"
+            path="/nxt-wave-effect-hook/topics/side-effects-and-synchronization"
             element={<SideEffectsAndSync />}
           />
-          <Route path="/topics/syntax" element={<Syntax />} />
+          <Route path="/nxt-wave-effect-hook/topics/syntax" element={<Syntax />} />
           <Route
-            path="/topics/when-to-use-effect-hook"
+            path="/nxt-wave-effect-hook/topics/when-to-use-effect-hook"
             element={<WhenToUseSideEffect />}
           />
-          <Route path="/topics/dependencies" element={<Dependencies />} />
-          <Route path="/topics/things-to-avoid" element={<Avoid />} />
-          <Route path="/topics/cleanup-function" element={<CleanUp />} />
+          <Route path="/nxt-wave-effect-hook/topics/dependencies" element={<Dependencies />} />
+          <Route path="/nxt-wave-effect-hook/topics/things-to-avoid" element={<Avoid />} />
+          <Route path="/nxt-wave-effect-hook/topics/cleanup-function" element={<CleanUp />} />
         </Routes>
       </Box>
     </div>

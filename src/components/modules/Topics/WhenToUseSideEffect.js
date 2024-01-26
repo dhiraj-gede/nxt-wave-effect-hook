@@ -43,7 +43,7 @@ function WhenToUseEffectHook() {
         The `useEffect` hook lets you synchronize your component with an external system. It runs after every render but you can control when it runs by specifying dependencies.
       </Typography>
       {!completedModules.includes("When to use Effect Hook") && 
-      <Link to="/topics/dependencies" >
+      <Link to="/nxt-wave-effect-hook/topics/dependencies" >
       <Button variant="contained"
             sx={{marginTop: '4rem'}}
             onClick={handleCompletion} color="primary">
@@ -52,7 +52,7 @@ function WhenToUseEffectHook() {
       </Link>
 }
 {completedModules.length===7 && 
-      <Link to="/mcqs" >
+      <Link to="/nxt-wave-effect-hook/mcqs" >
       <Button variant="contained" sx={{marginTop: '4rem'}} onClick={handleCompletion} color="primary">
         MCQ's
       </Button>

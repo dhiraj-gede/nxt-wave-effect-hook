@@ -131,7 +131,7 @@ function WhatIsEffectHook() {
         easy to understand.
       </Typography>
       {!completedModules.includes("What is Effect Hook?") && 
-      <Link to="/topics/side-effects-and-synchronization" > 
+      <Link to="/nxt-wave-effect-hook/topics/side-effects-and-synchronization" > 
         <Button variant="contained"
             sx={{marginTop: '4rem'}}
             onClick={handleCompletion} color="primary">
@@ -140,7 +140,7 @@ function WhatIsEffectHook() {
       </Link>
 }
 {completedModules.length===7 && 
-      <Link to="/mcqs" >
+      <Link to="/nxt-wave-effect-hook/mcqs" >
       <Button variant="contained" sx={{marginTop: '4rem'}} onClick={handleCompletion} color="primary">
         MCQ's
       </Button>
