@@ -44,6 +44,9 @@ function Summary() {
         multiple useEffect hooks in a single component to separate different
         types of side effects.
       </Typography>
+      <Box sx={{position: 'relative', paddingBottom: "56.25%", height: 0}} >
+        <iframe src="https://www.loom.com/embed/795bd45fb0c141f29dc0972f42096da6?sid=f7c0b47a-cf42-4a2f-8def-22b55ff56f76" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe>
+      </Box>
       <Typography variant="body1">
         Source:{" "}
         <Link to={"https://react.dev/reference/react/hooks#effect-hooks"} target="_blank">
