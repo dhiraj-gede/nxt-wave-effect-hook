@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { Provider } from 'react-redux';
+import { useDispatch } from 'react-redux';
+
+import store from './redux/store'; // Assuming your store is defined in `/redux/store.js`
+import Home from './components/Home';
 
 function App() {
+  const dispatch = useDispatch();
+
+  // Fetch initial module completion data from localStorage if needed
+  useEffect(() => {
+    const storedModules = localStorage.getItem('completedModules');
+    if (storedModules) {
+      dispatch({ type: 'MODULE_COMPLETION_INITIALIZE', data: storedModules });
+    }
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Home />
+    </Provider>
   );
 }
 
